@@ -17,8 +17,12 @@ const Author = () => {
         alt={author.name}
       />
       <p className={styles['author__bio']}>
-        Personal site by <a href={getContactHref('twitter', author.contacts.twitter)}>{author.name}</a>.
-        <br/>
+        Personal site by{' '}
+        <a href={getContactHref('twitter', author.contacts.twitter)}>
+          {author.name}
+        </a>
+        .
+        <br />
         {author.bio}
       </p>
     </div>
