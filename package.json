@@ -17,7 +17,7 @@
     "test:watch": "jest --watch --config ./jest/jest-config.js",
     "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
+  "repository": "https://github.com/kevloves/kevloves.dev",
   "author": "Kevin Wang <kevin309wang@gmail.com>",
   "license": "MIT",
   "keywords": [
