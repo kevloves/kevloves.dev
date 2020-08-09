@@ -9,16 +9,17 @@ const Author = () => {
 
   return (
     <div className={styles['author']}>
+      <img
+        src={author.photo}
+        className={styles['author__photo']}
+        width="50"
+        height="50"
+        alt={author.name}
+      />
       <p className={styles['author__bio']}>
+        Personal site by <a href={getContactHref('twitter', author.contacts.twitter)}>{author.name}</a>.
+        <br/>
         {author.bio}
-        <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <strong>{author.name}</strong> on Twitter
-        </a>
       </p>
     </div>
   );

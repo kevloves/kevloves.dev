@@ -1,13 +1,16 @@
 ---
-title: "About me"
+title: "Hi, I'm Kevin."
 template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I'm a software engineer at [__Bitglass__](https://www.bitglass.com/).
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I care about web development technologies, code optimization, and keep the code learning process fun. __Python__ and __JavaScript__ are my loves. Really into [__React__](https://reactjs.org/).
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+I love the building web things, and writing code for fun. Besides coding and technologies, I enjoy music, movie, reading, and playing video games.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+When I think of myself, I don't really consider myself a really good writer so I tended to avoid writing in the past. However, during this chaotic 2020, I start to think that I should probably document my life more, or at least write some thoughts down. Thus, this site is created.
+
+I have two cute roommates, follow them on Instagram at [here](https://www.instagram.com/beicha_latte/)!
+![alt text](/media/beichalatte.jpg "my cute cats")

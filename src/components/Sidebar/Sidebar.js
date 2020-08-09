@@ -1,11 +1,13 @@
 // @flow strict
 import React from 'react';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
+// import Toggle from 'react-toggle'
 
 type Props = {
   isIndex?: boolean,
@@ -20,6 +22,18 @@ const Sidebar = ({ isIndex }: Props) => {
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <label>
+              <input
+                type="checkbox"
+                onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                checked={theme === 'dark'}
+              />{' '}
+              Dark mode
+            </label>
+          )}
+        </ThemeToggler>
         <Copyright copyright={copyright} />
       </div>
     </div>

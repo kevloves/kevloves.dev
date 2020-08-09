@@ -5,13 +5,18 @@
   border-top: 1px solid $color-gray-border;
   max-width: $layout-post-width;
   padding-top: 20px;
-  @include line-height(1);
   @include margin-top(1);
   @include margin-bottom(2);
 
+  &__photo {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
   &__bio {
+    margin: 0 auto;
     &-twitter {
-      display: block;
       text-decoration: underline;
     }
   }
