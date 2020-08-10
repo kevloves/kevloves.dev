@@ -1,5 +1,5 @@
 // @flow strict
-import React from 'react';
+import React, { useEffect } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Author from './Author';
 import Contacts from './Contacts';
@@ -20,6 +20,7 @@ const Sidebar = ({ isIndex }: Props) => {
     document.body.classList.add(addClass);
     document.body.classList.remove(removeClass);
   };
+
   const toggleDarkMode = () => {
     if (isDarkMode) {
       setDarkMode(false);
@@ -29,6 +30,12 @@ const Sidebar = ({ isIndex }: Props) => {
       setBodyClass('dark', 'light');
     }
   };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      setBodyClass('dark', 'light');
+    }
+  });
 
   return (
     <div className={styles['sidebar']}>
