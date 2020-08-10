@@ -1,13 +1,12 @@
 // @flow strict
 import React from 'react';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
-// import Toggle from 'react-toggle'
 
 type Props = {
   isIndex?: boolean,
@@ -15,6 +14,19 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
+  const [isDarkMode, setDarkMode] = React.useState(false);
+  const setBodyClass = (addClass, removeClass) => {
+    document.body.classList.add(addClass);
+    document.body.classList.remove(removeClass);
+  };
+  const toggleDarkMode = (checked: boolean) => {
+    if (isDarkMode) {
+      setBodyClass('light', 'dark');
+    } else {
+      setBodyClass('dark', 'light');
+    }
+    setDarkMode(checked);
+  };
 
   return (
     <div className={styles['sidebar']}>
@@ -22,20 +34,12 @@ const Sidebar = ({ isIndex }: Props) => {
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
-        <ThemeToggler>
-          {({ theme, toggleTheme }) => (
-            <label>
-              <input
-                type="checkbox"
-                onChange={(e) =>
-                  toggleTheme(e.target.checked ? 'dark' : 'light')
-                }
-                checked={theme === 'dark'}
-              />{' '}
-              Dark mode
-            </label>
-          )}
-        </ThemeToggler>
+        <DarkModeSwitch
+          style={{ marginBottom: '2rem' }}
+          checked={isDarkMode}
+          onChange={toggleDarkMode}
+          size={30}
+        />
         <Copyright copyright={copyright} />
       </div>
     </div>
