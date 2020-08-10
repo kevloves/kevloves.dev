@@ -5,6 +5,7 @@
 <url> <loc>https://kevloves.dev/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://kevloves.dev/posts/the-beginning</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://kevloves.dev/tag/personal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://kevloves.dev/category/random</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kevloves.dev/tag/random</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://kevloves.dev/category/personal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://kevloves.dev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
