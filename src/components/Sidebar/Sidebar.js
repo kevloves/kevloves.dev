@@ -6,7 +6,7 @@ import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
-import { useSiteMetadata } from '../../hooks';
+import { useSiteMetadata, useLocalStorage } from '../../hooks';
 
 type Props = {
   isIndex?: boolean,
@@ -14,18 +14,20 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
-  const [isDarkMode, setDarkMode] = React.useState(false);
+  const [isDarkMode, setDarkMode] = useLocalStorage('darkMode', false);
+
   const setBodyClass = (addClass, removeClass) => {
     document.body.classList.add(addClass);
     document.body.classList.remove(removeClass);
   };
-  const toggleDarkMode = (checked: boolean) => {
+  const toggleDarkMode = () => {
     if (isDarkMode) {
+      setDarkMode(false);
       setBodyClass('light', 'dark');
     } else {
+      setDarkMode(true);
       setBodyClass('dark', 'light');
     }
-    setDarkMode(checked);
   };
 
   return (
