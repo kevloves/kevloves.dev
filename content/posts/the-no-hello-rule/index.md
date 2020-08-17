@@ -11,7 +11,7 @@ description: "Don't just say hello in chat!"
 socialImage: ""
 ---
 ![alt text](/hello.jpg "Hello")
-I can still recall it was like just a couple of days after I started my new job. I was assigned a bug and after some investigations I was still quite perplexed. It was not a surprise at all since I was not familiar with the code base and the product services of the company. However, the most unfortunate thing was that my mentor was on PTO. So I decided to slack a senior software engineer on the other team who is in charged of the service I was working on to get more code context of the code architecture. When my mouse hovered over his name, a link poppep up [www.nohello.com](https://www.nohello.com/). After reading it, I feel like it's a really interesting topic that I've never thought about.
+I can still recall it was like just a couple of days after I started my new job. I was assigned a bug. After some investigations, I was still quite perplexed. It was not a surprise at all since I was not familiar with the codebase and the product services of the company. However, the most unfortunate thing was that my mentor was on PTO. So I decided to slack a senior software engineer on the other team who is in charge of the service I was working on to get more code context of the code architecture. When my mouse hovered over his name, a link popped up [www.nohello.com](https://www.nohello.com/). After reading it, I feel like it's a really interesting topic that I've never thought about.
 
 - _Hey Kevin, you there?_
 - _Hello Kevin, do you have time right now?_
@@ -23,4 +23,4 @@ The following two lines are pretty much my go-to now.
 
 > Hello Kevin, when you have time can you ...?
 
-Let other people know your purpose before getting a reply allows asynchronous communication and increases productivity. This doesn't only apply to work-related conversations but also some conversations with friends and family. For instance, asking my sister to buy me dinner on her way home or asking a friend to a movie. You will probably save a couple of minutes on each conversation. It might not seems like a lot but it adds up!
+Let other people know your purpose before getting a reply allows asynchronous communication and increases productivity. This doesn't only apply to work-related conversations but also some conversations with friends and family. For instance, asking my sister to buy me dinner on her way home or asking a friend to a movie. You will probably save a couple of minutes on each conversation. It might not seem like a lot but it adds up!
