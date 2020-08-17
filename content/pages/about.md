@@ -4,11 +4,11 @@ template: "page"
 socialImage: "/media/beichalatte.jpg"
 ---
 
-Hi, my name is Kevin. I'm a software engineer at [__Bitglass__](https://www.bitglass.com/).
+Hi, my name is Kevin. I'm currently a software engineer in Bay Area.
 
 I care about web development technologies, code optimization, and keep the code learning process fun. __Python__ and __JavaScript__ are my loves. Really into [__React__](https://reactjs.org/). I love building web things, and writing code for fun.
 
-I graduated from National Taiwan University in 2016 with a Bachelor's in Biology and continued my studies at the University of California, Davis, where I received a Master's in Computer Science in 2019.
+I graduated from [__National Taiwan University__](https://www.ntu.edu.tw/english/) in 2016 with a Bachelor's in Biology and continued my studies at [__University of California, Davis__](https://www.ucdavis.edu/), where I received a Master's in Computer Science in 2019.
 
 Besides coding and technologies, I also enjoy listening to music, playing video games, and reading a lot. 
 
