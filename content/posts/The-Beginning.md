@@ -10,6 +10,7 @@ tags:
   - "Random"
 description: "What am I going to write?"
 socialImage: "/media/the-beginning.jpg"
+langKey: "en"
 ---
 ![alt text](/media/the-beginning.jpg "The Beginning")
 
@@ -22,7 +23,6 @@ My personal favorite. It is the main platform that I use to share my personal li
 I use Twitter to mainly follow the topic/people that I care. Twitter usually has the fastest speed when it comes to gathering information.
 
 Moving forward, I plan to share 
-
 - Tech/ Code
 - Investment-related topics
 - Thoughts after reading

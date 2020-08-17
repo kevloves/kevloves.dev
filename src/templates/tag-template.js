@@ -64,6 +64,7 @@ export const query = graphql`
           tags: { in: [$tag] }
           template: { eq: "post" }
           draft: { ne: true }
+          langKey: { eq: "en" }
         }
       }
       sort: { order: DESC, fields: [frontmatter___date] }

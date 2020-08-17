@@ -14,6 +14,21 @@ exports[`Post renders correctly 1`] = `
     className="post__content"
   >
     <div
+      className="translation"
+    >
+      <p
+        className="translation__panel"
+      >
+        <span>
+          <a
+            href="/test"
+          >
+            English
+          </a>
+        </span>
+      </p>
+    </div>
+    <div
       className="content"
     >
       <h1
@@ -75,22 +90,141 @@ exports[`Post renders correctly 1`] = `
     <div
       className="author"
     >
+      <img
+        alt="Test name"
+        className="author__photo"
+        height="50"
+        src="/test.jpg"
+        width="50"
+      />
       <p
         className="author__bio"
       >
-        Test bio
+        Personal site by
+         
         <a
-          className="author__bio-twitter"
           href="https://www.twitter.com/#"
-          rel="noopener noreferrer"
-          target="_blank"
         >
-          <strong>
-            Test name
-          </strong>
-           on Twitter
+          Test name
         </a>
+        .
+        <br />
+        Test bio
       </p>
+      <div
+        className="author__dark_mode_toggler"
+      >
+        <svg
+          color="black"
+          fill="none"
+          height={30}
+          onClick={[Function]}
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginBottom": "2rem",
+              "transform": " rotate(90deg)",
+            }
+          }
+          viewBox="0 0 24 24"
+          width={30}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask
+            id="myMask2"
+          >
+            <rect
+              fill="white"
+              height="100%"
+              width="100%"
+              x="0"
+              y="0"
+            />
+            <circle
+              fill="black"
+              r="9"
+              style={
+                Object {
+                  "cx": "100%",
+                  "cy": 0,
+                }
+              }
+            />
+          </mask>
+          <circle
+            cx="12"
+            cy="12"
+            fill="black"
+            mask="url(#myMask2)"
+            style={
+              Object {
+                "r": 5,
+              }
+            }
+          />
+          <g
+            stroke="currentColor"
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <line
+              x1="12"
+              x2="12"
+              y1="1"
+              y2="3"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="21"
+              y2="23"
+            />
+            <line
+              x1="4.22"
+              x2="5.64"
+              y1="4.22"
+              y2="5.64"
+            />
+            <line
+              x1="18.36"
+              x2="19.78"
+              y1="18.36"
+              y2="19.78"
+            />
+            <line
+              x1="1"
+              x2="3"
+              y1="12"
+              y2="12"
+            />
+            <line
+              x1="21"
+              x2="23"
+              y1="12"
+              y2="12"
+            />
+            <line
+              x1="4.22"
+              x2="5.64"
+              y1="19.78"
+              y2="18.36"
+            />
+            <line
+              x1="18.36"
+              x2="19.78"
+              y1="5.64"
+              y2="4.22"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
   </div>
   <div

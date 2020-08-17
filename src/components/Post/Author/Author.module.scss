@@ -16,9 +16,14 @@
 
   &__bio {
     margin: 0 auto;
+    display: inline;
     &-twitter {
       text-decoration: underline;
     }
+  }
+
+  &__dark_mode_toggler {
+    float: right;
   }
 }
 

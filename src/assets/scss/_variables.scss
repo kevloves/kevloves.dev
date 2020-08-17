@@ -5,8 +5,11 @@
 // Colors
 $color-background: var(--color-background, #fff);
 $color-base: var(--color-base, #222);
-$color-primary: var(--color-primary, #5D93FF);
+$color-primary: var(--color-primary, #d23669);
 $color-secondary: var(--color-secondary, #f7a046);
+$color-language-panel: var(--color--language-panel, rgba(255, 229, 100, 0.2));
+$color-language-panel-border: var(--color--language-panel-border, hsla(0, 0%, 0%, 0.2));
+$title-font-family: Montserrat, sans-serif;
 
 $color-white: #FFF;
 $color-gray:  #888;

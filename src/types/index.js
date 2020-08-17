@@ -25,6 +25,7 @@ export type PageContext = {
 export type Node = {
   fields: {
     slug: string,
+    langKey: string,
     categorySlug?: string,
     tagSlugs?: string[],
   },

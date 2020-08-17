@@ -1,9 +1,9 @@
 // @flow strict
-import React from 'react';
+import React, { useEffect } from 'react';
 import Helmet from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
+import { useSiteMetadata, useLocalStorage } from '../../hooks';
 import styles from './Layout.module.scss';
 
 type Props = {
@@ -17,6 +17,18 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
+  const isDarkMode = useLocalStorage('darkMode', false)[0];
+
+  const setBodyClass = (addClass, removeClass) => {
+    document.body.classList.add(addClass);
+    document.body.classList.remove(removeClass);
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      setBodyClass('dark', 'light');
+    }
+  });
 
   return (
     <div className={styles.layout}>

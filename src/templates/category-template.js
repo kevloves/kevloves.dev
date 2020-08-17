@@ -58,6 +58,7 @@ export const query = graphql`
           category: { eq: $category }
           template: { eq: "post" }
           draft: { ne: true }
+          langKey: { eq: "en" }
         }
       }
       sort: { order: DESC, fields: [frontmatter___date] }

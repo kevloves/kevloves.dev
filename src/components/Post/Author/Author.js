@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react';
+import DarkModeToggler from '../../DarkModeToggler';
 import { getContactHref } from '../../../utils';
 import styles from './Author.module.scss';
 import { useSiteMetadata } from '../../../hooks';
@@ -25,6 +26,9 @@ const Author = () => {
         <br />
         {author.bio}
       </p>
+      <div className={styles['author__dark_mode_toggler']}>
+        <DarkModeToggler />
+      </div>
     </div>
   );
 };

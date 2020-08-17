@@ -1,0 +1,14 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.translation {
+  &__panel {
+    max-width: $layout-post-width;
+    font-size: $typographic-base-font-size;
+    border: 1px solid $color-language-panel-border;
+    border-radius: 0.75em;
+    padding: 10px;
+    margin: 15px auto;
+    background: $color-language-panel;
+  }
+}

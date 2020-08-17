@@ -6,6 +6,7 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
+import Translation from './Translation';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
 
@@ -15,7 +16,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const { html } = post;
-  const { tagSlugs, slug } = post.fields;
+  const { tagSlugs, slug, langKey } = post.fields;
   const { tags, title, date } = post.frontmatter;
 
   return (
@@ -25,6 +26,7 @@ const Post = ({ post }: Props) => {
       </Link>
 
       <div className={styles['post__content']}>
+        <Translation slug={slug} lang={langKey} />
         <Content body={html} title={title} />
       </div>
 
