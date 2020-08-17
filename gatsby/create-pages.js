@@ -40,6 +40,8 @@ const createPages = async ({ graphql, actions }) => {
             }
             fields {
               slug
+              langKey
+              directoryName
             }
           }
         }
@@ -49,26 +51,84 @@ const createPages = async ({ graphql, actions }) => {
 
   const { edges } = result.data.allMarkdownRemark;
 
-  _.each(edges, (edge) => {
-    if (_.get(edge, 'node.frontmatter.template') === 'page') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/page-template.js'),
-        context: { slug: edge.node.fields.slug }
-      });
-    } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
-      });
-    }
+  const posts = edges.filter(
+    ({ node }) => 
+    node.frontmatter.template === 'post'
+  )
+
+  const pages = edges.filter(
+    ({ node }) => 
+    node.frontmatter.template === 'page'
+  )
+
+  const translationsByDirectory = _.reduce(
+    posts,
+    (result, post) => {
+      const directoryName = _.get(post, 'node.fields.directoryName');
+      const langKey = _.get(post, 'node.fields.langKey');
+
+      if (directoryName && langKey && langKey !== 'en') {
+        (result[directoryName] || (result[directoryName] = [])).push(
+          langKey
+        );
+      }
+
+      return result;
+    },
+    {}
+  );
+
+  const defaultLangPosts = posts.filter(
+    ({ node }) => node.fields.langKey === 'en'
+  );
+
+  const otherLangPosts = posts.filter(
+    ({ node }) => node.fields.langKey !== 'en'
+  );
+
+  _.each(defaultLangPosts, (post) => {
+    const translations =
+      translationsByDirectory[_.get(post, 'node.fields.directoryName')] ||
+      [];
+
+    createPage({
+      path: post.node.fields.slug,
+      component: path.resolve('./src/templates/post-template.js'),
+      context: {
+        slug: post.node.fields.slug,
+        translations
+      }
+    });
+  });
+
+  _.each(otherLangPosts, (post) => {
+    const translations =
+      translationsByDirectory[_.get(post, 'node.fields.directoryName')];
+
+    createPage({
+      path: post.node.fields.slug,
+      component: path.resolve('./src/templates/post-template.js'),
+      context: {
+        slug: post.node.fields.slug,
+        translations
+      }
+    });
+  });
+
+
+  _.each(pages, (page) => {
+    createPage({
+      path: page.node.fields.slug,
+      component: path.resolve('./src/templates/page-template.js'),
+      context: { slug: page.node.fields.slug }
+    });
   });
 
   // Feeds
   await createTagsPages(graphql, actions);
   await createCategoriesPages(graphql, actions);
   await createPostsPages(graphql, actions);
+
 };
 
 module.exports = createPages;

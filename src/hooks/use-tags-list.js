@@ -7,11 +7,8 @@ const useTagsList = () => {
       query TagsListQuery {
         allMarkdownRemark(
           filter: {
-            frontmatter: {
-              template: { eq: "post" }
-              draft: { ne: true }
-              langKey: { eq: "en" }
-            }
+            frontmatter: { template: { eq: "post" }, draft: { ne: true } }
+            fields: { langKey: { eq: "en" } }
           }
         ) {
           group(field: frontmatter___tags) {

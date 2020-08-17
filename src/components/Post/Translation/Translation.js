@@ -12,7 +12,6 @@ type Props = {
 
 const Translation = ({ slug, lang }: Props) => {
   const languageLink = createLanguageLink(slug, lang);
-
   return (
     <div className={styles['translation']}>
       <p className={styles['translation__panel']}>

@@ -3,16 +3,15 @@ title: 起點
 date: "2020-08-08"
 template: "post"
 draft: false
-slug: "the-beginning/zh-TW"
+slug: "the-beginning"
 category: "Personal"
 tags:
   - "Personal"
   - "Random"
 description: "我會寫些什麼呢？"
-socialImage: "/media/the-beginning.jpg"
-langKey: "zh-TW"
+socialImage: "/the-beginning.jpg"
 ---
-![alt text](/media/the-beginning.jpg "The Beginning")
+![alt text](/the-beginning.jpg "The Beginning")
 當我決定要架這個網站的時候，腦中馬上就浮現一個問題需要答案： 我要寫什麼？特別是在擁有不同社群軟體的情況下，如果可以把這裡跟他們有所區別就太好了。我檢視了自己在不同社群軟體上的使用行為，發現有很大的差別。
 
 ### Facebook

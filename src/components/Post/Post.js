@@ -12,9 +12,10 @@ import type { Node } from '../../types';
 
 type Props = {
   post: Node,
+  translation: string[],
 };
 
-const Post = ({ post }: Props) => {
+const Post = ({ post, translations }: Props) => {
   const { html } = post;
   const { tagSlugs, slug, langKey } = post.fields;
   const { tags, title, date } = post.frontmatter;
@@ -26,7 +27,7 @@ const Post = ({ post }: Props) => {
       </Link>
 
       <div className={styles['post__content']}>
-        <Translation slug={slug} lang={langKey} />
+        {translations.length > 0 && <Translation slug={slug} lang={langKey} />}
         <Content body={html} title={title} />
       </div>
 

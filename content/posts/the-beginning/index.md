@@ -9,10 +9,9 @@ tags:
   - "Personal"
   - "Random"
 description: "What am I going to write?"
-socialImage: "/media/the-beginning.jpg"
-langKey: "en"
+socialImage: "/the-beginning.jpg"
 ---
-![alt text](/media/the-beginning.jpg "The Beginning")
+![alt text](/the-beginning.jpg "The Beginning")
 
 After I decided to create this site, I immediately realize that I probably will have to figure out what to write. Especailly with all the social media accounts I have, it will be great if I can somehow distiguish the usage of here with them. As of right now, I have totally different behaviors on those social media platforms.
 ### Facebook

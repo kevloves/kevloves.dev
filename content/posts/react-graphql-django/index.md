@@ -14,5 +14,4 @@ tags:
   - "GraphQL"
 description: "How to create a Django GraphQL API?"
 socialImage: ""
-langKey: "en"
 ---

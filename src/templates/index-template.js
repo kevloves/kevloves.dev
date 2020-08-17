@@ -51,11 +51,8 @@ export const query = graphql`
       limit: $postsLimit
       skip: $postsOffset
       filter: {
-        frontmatter: {
-          template: { eq: "post" }
-          draft: { ne: true }
-          langKey: { eq: "en" }
-        }
+        frontmatter: { template: { eq: "post" }, draft: { ne: true } }
+        fields: { langKey: { eq: "en" } }
       }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {

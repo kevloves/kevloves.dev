@@ -7,14 +7,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
-    if (typeof node.frontmatter.slug !== 'undefined') {
-      const dirname = getNode(node.parent).relativeDirectory;
-      createNodeField({
-        node,
-        name: 'slug',
-        value: `/${dirname}/${node.frontmatter.slug}`
-      });
-    } else {
+    if (typeof node.frontmatter.slug === 'undefined') {
       const value = createFilePath({ node, getNode });
       createNodeField({
         node,
@@ -23,8 +16,26 @@ const onCreateNode = ({ node, actions, getNode }) => {
       });
     }
 
-    if (node.frontmatter.langKey) {
-      createNodeField({ node, name: 'langKey', value: node.frontmatter.langKey });
+    const pathList = getNode(node.parent).relativeDirectory.split('/');
+    if (pathList[0] === 'posts') {
+      const absolutePathList = node.fileAbsolutePath.split('/');
+      const fileNameList = absolutePathList[absolutePathList.length - 1].split('.')
+      const langKey = fileNameList.length === 3 ? fileNameList[1] : 'en'
+      createNodeField({ node, name: 'langKey', value: langKey });
+      createNodeField({ node, name: 'directoryName', value: pathList[1]})
+      if (langKey === 'en') {
+        createNodeField({
+          node,
+          name: 'slug',
+          value: `/${node.frontmatter.slug}`
+        });
+      } else {
+        createNodeField({
+          node,
+          name: 'slug',
+          value: `/${langKey}/${node.frontmatter.slug}`
+        });
+      }
     }
 
     if (node.frontmatter.tags) {
