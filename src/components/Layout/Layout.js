@@ -19,14 +19,13 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
   const metaImageUrl = url + withPrefix(metaImage);
   const isDarkMode = useLocalStorage('darkMode', false)[0];
 
-  const setBodyClass = (addClass, removeClass) => {
-    document.body.classList.add(addClass);
-    document.body.classList.remove(removeClass);
+  const addDarkClass = () => {
+    document.body.classList.add('dark');
   };
 
   useEffect(() => {
     if (isDarkMode) {
-      setBodyClass('dark', 'light');
+      addDarkClass();
     }
   });
 

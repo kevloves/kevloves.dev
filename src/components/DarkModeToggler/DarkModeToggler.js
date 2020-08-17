@@ -6,20 +6,21 @@ import { useLocalStorage } from '../../hooks';
 const DarkModeToggler = () => {
   const [isDarkMode, setDarkMode] = useLocalStorage('darkMode', false);
 
-  const setBodyClass = (addClass, removeClass) => {
-    if (document.body) {
-      document.body.classList.add(addClass);
-      document.body.classList.remove(removeClass);
-    };
+  const addDarkClass = () => {
+    document.body.classList.add('dark');
+  };
+
+  const removeDarkClass = () => {
+    document.body.classList.remove('dark');
   };
 
   const toggleDarkMode = () => {
     if (isDarkMode) {
       setDarkMode(false);
-      setBodyClass('light', 'dark');
+      removeDarkClass();
     } else {
       setDarkMode(true);
-      setBodyClass('dark', 'light');
+      addDarkClass();
     }
   };
   return (
