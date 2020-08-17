@@ -22,6 +22,7 @@ describe('Post', () => {
         slug: '/test',
         categorySlug: '/test-category',
         tagSlugs: ['/test_0', '/test_1'],
+        langKey: 'en',
       },
       frontmatter: {
         date: '2016-09-01',

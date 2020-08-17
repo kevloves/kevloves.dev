@@ -7,8 +7,10 @@ const DarkModeToggler = () => {
   const [isDarkMode, setDarkMode] = useLocalStorage('darkMode', false);
 
   const setBodyClass = (addClass, removeClass) => {
-    document.body.classList.add(addClass);
-    document.body.classList.remove(removeClass);
+    if (document.body) {
+      document.body.classList.add(addClass);
+      document.body.classList.remove(removeClass);
+    };
   };
 
   const toggleDarkMode = () => {

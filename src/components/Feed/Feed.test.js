@@ -12,6 +12,7 @@ describe('Feed', () => {
             slug: '/test_0',
             categorySlug: '/test_0',
             tagSlugs: ['/test-1', '/test-2'],
+            langKey: 'en',
           },
           frontmatter: {
             date: '2016-09-01',
@@ -30,6 +31,7 @@ describe('Feed', () => {
             slug: '/test_1',
             categorySlug: '/test_1',
             tagSlugs: ['/test-1', '/test-2'],
+            langKey: 'zh-TW',
           },
           frontmatter: {
             date: '2016-09-01',
