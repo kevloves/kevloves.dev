@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Kevin Wang]]></title><description><![CDATA[Python | JavaScript]]></description><link>https://kevloves.dev</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 Aug 2020 22:12:30 GMT</lastBuildDate><item><title><![CDATA[The No Hello Rule]]></title><description><![CDATA[Don't just say hello in chat!]]></description><link>https://kevloves.dev/the-no-hello-rule</link><guid isPermaLink="false">https://kevloves.dev/the-no-hello-rule</guid><pubDate>Mon, 17 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Kevin Wang]]></title><description><![CDATA[Python | JavaScript]]></description><link>https://kevloves.dev</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 Aug 2020 01:21:29 GMT</lastBuildDate><item><title><![CDATA[The No Hello Rule]]></title><description><![CDATA[Don't just say hello in chat!]]></description><link>https://kevloves.dev/the-no-hello-rule</link><guid isPermaLink="false">https://kevloves.dev/the-no-hello-rule</guid><pubDate>Mon, 17 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 610px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 12.916666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3KAB/8QAFhAAAwAAAAAAAAAAAAAAAAAAAhAx/9oACAEBAAEFAgi//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABPyFP/9oADAMBAAIAAwAAABAAD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABgQAQADAQAAAAAAAAAAAAAAAAEQESFB/9oACAEBAAE/EBT1d6rP/9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 12.916666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAUklEQVQI12O4f+/xw7t3Hj588vjF6tev3vExAMGzpy8ZyAabN237v2HD5v8vX7z9//nTdyeogUxkG/jwwdMjjx4+Pfnk8fPejx8/s4ENfEa+CwEDxi8/i5ZtsAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
         &lt;source
-          srcset=&quot;/static/3e4fb3b62537125f560fe97fe478ac3f/8ac56/hello.webp 240w,
-/static/3e4fb3b62537125f560fe97fe478ac3f/d3be9/hello.webp 480w,
-/static/3e4fb3b62537125f560fe97fe478ac3f/04445/hello.webp 610w&quot;
+          srcset=&quot;/static/5b8de7ec1a354f87d8fc55f8af2397ea/8ac56/hello.webp 240w,
+/static/5b8de7ec1a354f87d8fc55f8af2397ea/d3be9/hello.webp 480w,
+/static/5b8de7ec1a354f87d8fc55f8af2397ea/04445/hello.webp 610w&quot;
           sizes=&quot;(max-width: 610px) 100vw, 610px&quot;
           type=&quot;image/webp&quot;
         /&gt;
         &lt;source
-          srcset=&quot;/static/3e4fb3b62537125f560fe97fe478ac3f/09b79/hello.jpg 240w,
-/static/3e4fb3b62537125f560fe97fe478ac3f/7cc5e/hello.jpg 480w,
-/static/3e4fb3b62537125f560fe97fe478ac3f/073a0/hello.jpg 610w&quot;
+          srcset=&quot;/static/5b8de7ec1a354f87d8fc55f8af2397ea/8ff5a/hello.png 240w,
+/static/5b8de7ec1a354f87d8fc55f8af2397ea/e85cb/hello.png 480w,
+/static/5b8de7ec1a354f87d8fc55f8af2397ea/5aae9/hello.png 610w&quot;
           sizes=&quot;(max-width: 610px) 100vw, 610px&quot;
-          type=&quot;image/jpeg&quot;
+          type=&quot;image/png&quot;
         /&gt;
         &lt;img
           class=&quot;gatsby-resp-image-image&quot;
-          src=&quot;/static/3e4fb3b62537125f560fe97fe478ac3f/073a0/hello.jpg&quot;
+          src=&quot;/static/5b8de7ec1a354f87d8fc55f8af2397ea/5aae9/hello.png&quot;
           alt=&quot;alt text&quot;
           title=&quot;Hello&quot;
           loading=&quot;lazy&quot;
