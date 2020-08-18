@@ -7,10 +7,5 @@ exports[`Layout renders correctly 1`] = `
   >
     test
   </div>
-  <div
-    className="copyright"
-  >
-    Test copyright
-  </div>
 </div>
 `;

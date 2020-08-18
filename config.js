@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© 2020 Kevin Wang',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'G-SB5HJLM93E',
   useKatex: false,
   menu: [
     {
@@ -25,7 +25,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Live in the moment.',
     contacts: {
-      email: 'kevin309wang@gmail.com',
+      email: 'kevin@kevloves.dev',
       facebook: 'kevinw309',
       twitter: 'kevloves_',
       github: 'kevloves',

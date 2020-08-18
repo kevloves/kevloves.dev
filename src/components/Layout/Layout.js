@@ -5,7 +5,6 @@ import { withPrefix } from 'gatsby';
 import type { Node as ReactNode } from 'react';
 import { useSiteMetadata, useLocalStorage } from '../../hooks';
 import styles from './Layout.module.scss';
-import Copyright from './Copyright';
 
 type Props = {
   children: ReactNode,
@@ -15,7 +14,7 @@ type Props = {
 };
 
 const Layout = ({ children, title, description, socialImage }: Props) => {
-  const { author, copyright, url } = useSiteMetadata();
+  const { author, url } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
   const isDarkMode = useLocalStorage('darkMode', false)[0];
@@ -46,7 +45,6 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
         </Helmet>
         {children}
       </div>
-      <Copyright copyright={copyright} />
     </div>
   );
 };
