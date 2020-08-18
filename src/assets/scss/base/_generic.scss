@@ -169,3 +169,26 @@ figcaption {
   }
 
 }
+
+.totoro {
+  display: none;
+}
+
+@include breakpoint-sm {
+  .totoro {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+@include breakpoint-md {
+  .totoro {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+}

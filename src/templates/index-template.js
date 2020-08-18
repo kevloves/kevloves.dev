@@ -8,6 +8,7 @@ import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
+import totoro from '../../static/media/totoro.png';
 
 type Props = {
   data: AllMarkdownRemark,
@@ -40,6 +41,9 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
           hasPrevPage={hasPrevPage}
           hasNextPage={hasNextPage}
         />
+        <div className="totoro">
+          <img src={totoro} width="200px" height="200px" />
+        </div>
       </Page>
     </Layout>
   );

@@ -2,11 +2,18 @@
 @import '../../../assets/scss/mixins';
 
 .author {
+  display: flex;
+  align-items: center;
   &__photo {
-    display: inline-block;
     margin-bottom: 0;
     border-radius: 50%;
+    width: 75px;
+    height: 75px;
     background-clip: padding-box
+  }
+
+  &__bio {
+    padding-left: 15px;
   }
 
   &__title {
@@ -29,9 +36,42 @@
   }
 
   &__subtitle {
+    display: none;
     color: $color-gray;
     @include line-height(1);
     @include margin-bottom(1)
   }
 
+}
+
+@include breakpoint-sm {
+  .author {
+    display: block;
+    &__photo {
+      width: 200px;
+      height: 200px;
+    }
+    &__bio {
+      padding-left: 0px;
+    }
+    &__subtitle {
+      display: block;
+    }
+  }
+}
+
+@include breakpoint-md {
+  .author {
+    display: block;
+    &__photo {
+      width: 200px;
+      height: 200px;
+    }
+    &__bio {
+      padding-left: 0px;
+    }
+    &__subtitle {
+      display: block;
+    }
+  }
 }

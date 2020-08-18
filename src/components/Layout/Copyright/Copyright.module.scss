@@ -4,4 +4,7 @@
 .copyright {
   color: lighten($color-gray, 18%);
   font-size: $typographic-small-font-size;
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
 }

@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'Blog by Kevin Wang',
   subtitle: 'Python | JavaScript',
-  copyright: '© All rights reserved.',
+  copyright: '© 2020 Kevin Wang',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',

@@ -16,26 +16,28 @@ exports[`Sidebar renders correctly 1`] = `
         <img
           alt="Test name"
           className="author__photo"
-          height="200"
           src="/test.jpg"
-          width="200"
         />
       </a>
-      <h1
-        className="author__title"
+      <div
+        className="author__bio"
       >
-        <a
-          className="author__title-link"
-          href="/"
+        <h1
+          className="author__title"
         >
-          Test name
-        </a>
-      </h1>
-      <p
-        className="author__subtitle"
-      >
-        Test bio
-      </p>
+          <a
+            className="author__title-link"
+            href="/"
+          >
+            Test name
+          </a>
+        </h1>
+        <p
+          className="author__subtitle"
+        >
+          Test bio
+        </p>
+      </div>
     </div>
     <nav
       className="menu"
@@ -325,11 +327,6 @@ exports[`Sidebar renders correctly 1`] = `
         />
       </g>
     </svg>
-    <div
-      className="copyright"
-    >
-      Test copyright
-    </div>
   </div>
 </div>
 `;
