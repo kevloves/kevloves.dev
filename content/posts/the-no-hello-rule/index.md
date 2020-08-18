@@ -11,12 +11,12 @@ description: "Don't just say hello in chat!"
 socialImage: "/hello.png"
 ---
 ![alt text](/hello.png "Hello")
-I can still recall it was like just a couple of days after I started my new job. I was assigned a bug. After some investigations, I was still quite perplexed. It was not a surprise at all since I was not familiar with the codebase and the product services of the company. However, the most unfortunate thing was that my mentor was on PTO. So I decided to slack a senior software engineer on the other team who is in charge of the service I was working on to get more code context of the code architecture. When my mouse hovered over his name, a link popped up [www.nohello.com](https://www.nohello.com/). After reading it, I feel like it's a really interesting topic that I've never thought about.
+I can still recall it was like just a couple of days after I started my new job. I was assigned a bug. After some investigations, I was still quite perplexed. It was not a surprise at all since I was not familiar with the codebase and the product services of the company. However, the most unfortunate thing was that my mentor was on PTO. So I decided to slack a senior software engineer on the other team who is in charge of the service I was working on to get more context of the code architecture. When my mouse hovered over his name, a link popped up [www.nohello.com](https://www.nohello.com/). After reading it, I feel like it's a really interesting topic that I've never thought about.
 
 - _Hey Kevin, you there?_
 - _Hello Kevin, do you have time right now?_
 
-People tend to be polite when starting a conversation with just __Hi__ or __Hello__. It's great when it's a conversation in person. However, if you stop there in a text chat, I have no idea what you want to talk with me about when I see your hello. And then I'll have to wait for you to phrase your question or request. This is just not efficient.
+People tend to be polite when starting a conversation with just __Hi__ or __Hello__. It's great when it's an in-persion conversation. However, if you stop there in a text chat, I will have no idea what you want to talk with me about when I see your hello. And then I'll have to wait for you to phrase your question or request. This is just inefficient.
 
 The following two lines are pretty much my go-to now.
 > Hi Kevin, quick question. Do you know ...?
